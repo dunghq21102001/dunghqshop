@@ -11,15 +11,17 @@
         integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./assets/font/fontawesome-free-5.15.4-web/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
     <title>Online Store</title>
 </head>
 
 <body>
     <div class="app">
         <header class="header">
-            <div class="grid">
+            <div class="grid wide">
                 <!-- nav -->
-                <nav class="header_navbar">
+                <nav class="header_navbar hide-on-mobile-tablet">
                     <ul class="header_navbar-list">
                         <li class="header_navbar-item header_navbar-item--qr header_navbar-item--separate">
                             Enter the store in the application
@@ -163,7 +165,7 @@
 
                 <!-- logo / search -->
                 <div class="header_search">
-                    <div class="header_logo">
+                    <div class="header_logo hide-on-tablet">
                         <img src="./assets/img/logoWhite.png" class="header_logo-img" alt="">
                     </div>
                     <div class="search">
@@ -314,10 +316,23 @@
                     </div>
                 </div>
             </div>
-
+            <div class="header_sort-bar">
+                <li class="header_sort-item">
+                    <a href="" class="header_sort-link">Relate</a>
+                </li>
+                <li class="header_sort-item">
+                    <a href="" class="header_sort-link header_sort-link--active">Latest</a>
+                </li>
+                <li class="header_sort-item">
+                    <a href="" class="header_sort-link">bestseller</a>
+                </li>
+                <li class="header_sort-item">
+                    <a href="" class="header_sort-link">Price</a>
+                </li>
+            </div>
         </header>
         <div class="container">
-            <div class="grid">
+            <div class="grid wide">
                 <div class="grid__row container-content">
                     <div class="grid__column-2">
                         <nav class="category">
@@ -371,7 +386,7 @@
                     </div>
 
                     <div class="grid__column-10">
-                        <div class="home-filter">
+                        <div class="home-filter hide-on-mobile-tablet">
                             <span class="home-filter-lable">
                                 Sorted by
                             </span>
@@ -1346,7 +1361,7 @@
             </div>
         </div>
         <footer class="footer">
-            <div class="grid">
+            <div class="grid wide">
                 <div class="grid__row">
                     <div class="grid__column-2-4">
                         <h3 class="footer-heading">Customer care</h3>
