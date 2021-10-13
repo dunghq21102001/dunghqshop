@@ -31,8 +31,7 @@
     }
 
     .bridge-cart {
-        right: 183px;
-        top: -39px;
+        display: none;
     }
 
     .header_sort-bar {
