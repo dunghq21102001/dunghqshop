@@ -116,7 +116,7 @@ html {
 }
 
 .modal_body {
-    margin: 100px 400px;
+    margin: 100px auto;
     position: relative;
     width: 540px;
     height: 450px;
