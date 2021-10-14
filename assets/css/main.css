@@ -1,3 +1,7 @@
+.app {
+    overflow: hidden;
+}
+
 .header {
     height: var(--header-height);
     background-image: linear-gradient(0, #fe6433, #f53e2d);
@@ -88,9 +92,9 @@
     list-style: none;
     margin: 0;
     padding-left: 0;
-  border-top: 1px solid #e5e5e5;
-  border-bottom: 1px solid #e5e5e5;
-  display: none;
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+    display: none;
 }
 
 .header_sort-item {
@@ -123,6 +127,9 @@
 
 .header_sort-link--active {
     color: var(--primary-color);
+    border-bottom: 2px solid var(--primary-color);
+    height: 45px;
+    
 }
 
 .no-pointer {
@@ -432,6 +439,13 @@
     margin: 0 8px;
 }
 
+.fas.header_mobile-search-icon {
+    font-size: 2.6rem;
+    color: var(--white-color);
+    padding: 0 12px;
+    display: none;
+}
+
 .header_logo {
     width: 200px;
 }
@@ -439,6 +453,8 @@
 .header_logo-img {
     width: 150px;
     height: 130px;
+    display: block;
+    line-height: 0;
 }
 
 .search {
@@ -460,6 +476,7 @@
     display: inline-block;
     padding: 0 8px;
     cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .cart-wrap:hover .cart-list {
@@ -859,6 +876,60 @@
     right: -5px;
 }
 
+/* mobile category */
+.mobile-category {
+    display: none;
+}
+
+.mobile-category-list {
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+    max-width: 100%;
+    overflow-x: auto;
+}
+
+.mobile-category-list::-webkit-scrollbar {
+    display: none;
+}
+
+.mobile-category-item {
+    flex-shrink: 0;
+    margin-right: 10px;
+}
+
+.mobile-category-item:nth-of-type(3n + 1) .mobile-category-link {
+    background-color: #87afd8;
+}
+
+.mobile-category-item:nth-of-type(3n + 2) .mobile-category-link {
+    background-color: #76c9bd;
+}
+
+.mobile-category-item:nth-of-type(3n + 3) .mobile-category-link {
+    background-color: #88cf81;
+}
+
+.mobile-category-link {
+    --line-height: 2rem;
+    text-decoration: none;
+    color: var(--white-color);
+    font-size: 1.4rem;
+    line-height: var(--line-height);
+    text-align: center;
+    font-weight: 300;
+    width: 110px;
+    height: calc(var(--line-height * 2));
+    overflow: hidden;
+    display: block;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    border-radius: 5px;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
 /* Sort - filter */
 .container-content {
     padding-top: 36px;
@@ -1106,6 +1177,7 @@
 
 .home-pagination {
     margin: 48px 0 32px 0;
+    padding-left: 0;
 }
 
 .pagination-item {
@@ -1139,6 +1211,7 @@
     border-top: 4px solid var(--primary-color);
     padding-top: 16px;
     background-color: var(--white-color);
+    
 }
 
 .footer-heading {
