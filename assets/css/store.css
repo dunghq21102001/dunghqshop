@@ -190,13 +190,10 @@
 }
 
 .choose-quantity {
-    font-size: 1.6rem;
-}
-
-.choose-quantity {
     display: flex;
     align-items: center;
-    margin-left: 30px;
+    margin-left: 20px;
+    font-size: 1.6rem;
 }
 
 .sub-rate-infor {
@@ -232,14 +229,15 @@
 .store-cart {   
     display: flex;
     align-items: center;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     text-align: center;
 }
 
 .add-item {
     border: 1px solid var(--primary-color);
     min-width: 180px;
-    margin: 20px 20px 20px 30px;
+    height: 52px;
+    margin: 20px 20px 20px 15px;
     padding: 16px 16px;
     background-color: #ffeee8;
     color: var(--primary-color);
@@ -248,19 +246,11 @@
 
 .buy-item {
     border: 1px solid var(--primary-color);
-    min-width: 180px;
+    width: 180px;
+    height: 52px;
     padding: 16px 16px;
     background-color: var(--primary-color);
     color: var(--white-color);
     cursor: pointer;
     text-decoration: none;
-}
-
-.underline {
-    display: block;
-    position: absolute;
-    border-bottom: 1px solid #f2f2f2;
-    width: calc(100% - 60px);
-    left: 0;
-    top: 500;
 }
