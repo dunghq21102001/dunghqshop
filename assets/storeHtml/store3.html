@@ -371,7 +371,7 @@
                                 </div>
                                 <div class="sub-like">
                                     <i class="far fa-heart store-img-icon color-icon5"></i>
-                                    <p>Chưa thích</p>
+                                    <p>Like</p>
                                 </div>
                             </div>
                         </div>
@@ -613,6 +613,16 @@
         </div>
     </div>
 </body>
-<script src="../../index.js"></script>
+<script>
+    var heart = document.querySelector('.far.fa-heart.store-img-icon.color-icon5')
+
+    heart.onclick = function(e) {
+        heart.classList.toggle('far')
+        heart.classList.toggle('fas')
+    }
+
+    
+
+</script>
 
 </html>

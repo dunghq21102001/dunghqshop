@@ -209,7 +209,7 @@
                         <button class="search-btn">
                             <i class="fas fa-search search-btn-icon"></i>
                         </button>
-                    </div>                    
+                    </div>
                     <div class="cart">
                         <div class="cart-wrap">
                             <i class="fas fa-shopping-cart cart-icon"></i>
@@ -371,7 +371,7 @@
                                 </div>
                                 <div class="sub-like">
                                     <i class="far fa-heart store-img-icon color-icon5"></i>
-                                    <p>Chưa thích</p>
+                                    <p>Like</p>
                                 </div>
                             </div>
                         </div>
@@ -402,7 +402,8 @@
                             <div class="store-price">
                                 <p class="price-item">990.000đ - 1.100.000đ</p>
                             </div>
-                            <p class="other-infor">1 số thông tin về Vận chuyển, chất lượng, đơn vị vận chuyển vân vân mây mây khác</p>
+                            <p class="other-infor">1 số thông tin về Vận chuyển, chất lượng, đơn vị vận chuyển vân vân
+                                mây mây khác</p>
                             <div class="choose-quantity">
                                 <span class="sub-rate-infor"> Số lượng </span>
                                 <div class="store-reduce">-</div>
@@ -613,6 +614,13 @@
         </div>
     </div>
 </body>
-<script src="../../index.js"></script>
+<script>
+    var heart = document.querySelector('.far.fa-heart.store-img-icon.color-icon5')
+
+    heart.onclick = function (e) {
+        heart.classList.toggle('far')
+        heart.classList.toggle('fas')
+    }
+</script>
 
 </html>
