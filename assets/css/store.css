@@ -1,0 +1,266 @@
+.body-color {
+    background-color: #f5f5f5;
+}
+
+.history-row {
+    display: flex;
+    position: relative;
+    top: -30px;
+    left: 207px;
+}
+
+@media (max-width: 1023px) {
+    .hide-on-mobile-tablet {
+        display: none;
+    }
+}
+
+.history-row-item {
+    font-size: 14px;
+    color: var(--white-color);
+    margin: 0 6px;
+}
+
+.store-content {
+    background-color: var(--white-color);
+    margin-top: 56px;
+}
+
+.big-img {
+    width: 450px;
+}
+
+.main-img {
+    width: 100%;
+    cursor: pointer;
+    height: 450px;
+}
+
+.small-img {
+    width: 450px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.small-img-item {
+    width: 82px;
+    height: 82px;
+}
+
+.small-img-item:hover {
+    cursor: pointer;
+    border: 2px solid var(--primary-color);
+}
+
+.store-share {
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+}
+
+.sub-share {
+    display: flex;
+    align-items: center;
+    margin: 0 40px;
+}
+
+.sub-like {
+    display: flex;
+    align-items: center;
+}
+
+.store-img-icon {
+    margin: 0 4px;
+}
+
+.color-icon1 {
+    cursor: pointer;
+    color: #0088ff;
+}
+
+.color-icon2 {
+    cursor: pointer;
+    color: #3b5999;
+}
+
+.color-icon3 {
+    cursor: pointer;
+    color: #de0217;
+}
+
+.color-icon4 {
+    cursor: pointer;
+    color: #10c2ff;
+}
+
+.color-icon5 {
+    color: #ff424f;
+    cursor: pointer;
+}
+
+.box-infor {
+    width: 100%;
+    display: block;
+    margin-left: 27px;
+    position: relative;
+}
+
+.store-name {
+    font-size: 2.2rem;
+    color: var(--text-color);
+    font-weight: 300;
+    margin-top: 30px;
+}
+
+.box-rate {
+    display: flex;
+}
+
+.store-rate {
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: var(--primary-color);
+    margin-right: 20px;
+    position: relative;
+    cursor: pointer;
+}
+
+.store-rate::before {
+    content: "";
+    display: block;
+    position: absolute;
+    border-left: 1px solid #dbdbdb;
+    height: 25px;
+    right: -9px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.store-number-rate {
+    font-size: 1.6rem;
+    font-weight: 400;
+    position: relative;
+}
+
+.store-number-rate::before {
+    content: "";
+    display: block;
+    position: absolute;
+    border-left: 1px solid #dbdbdb;
+    height: 25px;
+    right: -9px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.store-number-sold {
+    font-size: 1.6rem;
+    font-weight: 400;
+    margin: 0 20px;
+}
+
+.sub-rate {
+    text-decoration: underline;
+}
+
+.sub-rate-infor {
+    color: #767676;
+}
+
+.store-price {
+    background-color: #fafafa;
+    width: calc(100% - 60px);
+    height: 70px;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    margin-top: 20px;
+}
+
+.price-item {
+    font-size: 3.6rem;
+    color: var(--primary-color);
+}
+
+.other-infor {
+    font-size: 4rem;
+    font-weight: 400;
+    margin: 18px 30px;
+    height: 240px;
+}
+
+.choose-quantity {
+    font-size: 1.6rem;
+}
+
+.choose-quantity {
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+}
+
+.sub-rate-infor {
+    margin-right: 50px;
+}
+
+.store-reduce {
+    border: 1px solid #e8e8e8;
+    padding: 8px 13px;
+
+}
+
+.store-reduce:hover {
+    cursor: pointer;
+}
+
+.store-increase {
+    border: 1px solid #e8e8e8;
+    padding: 8px 12px;
+    margin-right: 20px;
+}
+
+.store-increase:hover {
+    cursor: pointer;
+}
+
+.store-number-quantity {
+    border-top: 1px solid #e8e8e8;
+    border-bottom: 1px solid #e8e8e8;
+    padding: 8px 22px;
+}
+
+.store-cart {   
+    display: flex;
+    align-items: center;
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+.add-item {
+    border: 1px solid var(--primary-color);
+    min-width: 180px;
+    margin: 20px 20px 20px 30px;
+    padding: 16px 16px;
+    background-color: #ffeee8;
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+.buy-item {
+    border: 1px solid var(--primary-color);
+    min-width: 180px;
+    padding: 16px 16px;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.underline {
+    display: block;
+    position: absolute;
+    border-bottom: 1px solid #f2f2f2;
+    width: calc(100% - 60px);
+    left: 0;
+    top: 500;
+}

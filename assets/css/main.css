@@ -846,6 +846,17 @@
     position: relative;
 }
 
+/* .category-items::after {
+    content: "";
+    position: absolute;
+    border: 4px solid;
+    border-color: transparent transparent transparent var(--primary-color);
+    transform: translateY(calc(-50% + 4px));
+    top: 36%;
+    left: 4px;
+    display: none;
+} */
+
 .bride-category {
     position: absolute;
     border: 4px solid;
